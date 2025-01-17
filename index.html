@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./assets/images/favicon-32x32.png" type="image/x-icon">
+  <title>Frontend Mentor | Conference Ticket Generator</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <img src="./assets/images/logo-full.svg" alt="" class="brand-logo">
+    <!-- <h1 class="brand-name">Coding Conf</h1> -->
+  </header>
+  <main class="container">
+    <h2 class="hero">Your Journey to Coding Conf 2025 Starts Here!</h2>
+    <p class="description">Secure your spot at next year's biggest coding conference.</p>
+    <form action="" class="form-cont">
+      <label for="file-upload" class="file-input">
+        <div id="drop-area">
+          <img src="./assets/images/icon-upload.svg" alt="Upload Icon">
+          <p>Drag and drop or click to upload</p>
+        </div>
+        <input type="file" id="file-upload" accept="image/*" required>
+      </label>
+      
+      <p class="upload-info"><img src="./assets/images/icon-info.svg" alt=""> Upload your photo (JPG or PNG, max size:
+        500KB).</p>
+      <label for="full-name">Full Name
+        <input type="text" name="" id="full-name" required>
+      </label>
+      <label for="email">Email Address
+        <input type="email" name="" id="email" required placeholder="example@email.com">
+      </label>
+      <label for="github-username">GitHub Username
+        <input type="text" name="" id="github-username" required placeholder=" @yourusername">
+      </label>
+      <button class="generate-btn" type="button">Generate My Ticket</button>
+    </form>
+  </main>
+  <div>
+    <h1> Congrats, <span id="full-name-insert"></span>! Your ticket is ready.</h1>
+    <p>We've emailed your ticket to <span id="email-insert"></span>and will send updates in the run up to the event.</p>
+    <div class="ticket-cont">
+      <div>
+        <img src="./assets/images/logo-full.svg" alt="">
+        Coding Conf
+      </div>
+      <p id="date-location">Jan 31, 2025 / Austin, TX</p>
+      <div>
+        <div class="user-image" id="user-image"></div>
+        <h3 class="user-name" id="user-name"></h3>
+        <p class="github-username" id="github-username-insert"></p>
+      </div>
+    </div>
+    <div class="ticket-number"></div>
+  </div>
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io/challenges/conference-ticket-generator-oq5gFIU12w"
+        target="_blank" rel="noopener noreferrer">Frontend
+        Mentor</a>.
+      Coded by <a href="https://www.github.com/mayen007">Mayen</a>.
+    </div>
+  </footer>
+  <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
